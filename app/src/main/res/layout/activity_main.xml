@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sharpay.elmdemo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#0096FF"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="北京市海淀区西二旗"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/tv_search_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/location_tv"
+            android:background="@drawable/ele_search_bg"
+            android:gravity="center"
+            android:padding="10dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#535253"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:drawableLeft="@mipmap/search_icon"
+                android:layout_centerVertical="true"
+                android:hint="搜索商家,商品名称"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="#fff"
+            android:text="达美乐  呷谱  鲜芋仙  99炸鸡  麦当劳  肉夹馍"
+           android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ele_bg" />
+</LinearLayout>
